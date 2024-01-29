@@ -1,0 +1,25 @@
+Decision Tree
+python run.py -c example_configurations/dt_blackbox.ini -o output -l -g
+python run.py -c example_configurations/dt_whitebox.ini -o output -l -g
+python predict.py -c example_configurations/dt_blackbox_predict.ini -r output/DecisionTree.pickle -o output_predict -m 
+python predict.py -c example_configurations/dt_whitebox_predict.ini -r output/DecisionTree.pickle -o output_predict -m 
+
+Random Forest
+python run.py -c example_configurations/rf_blackbox.ini -o output -l -g
+python run.py -c example_configurations/rf_whitebox.ini -o output -l -g
+python predict.py -c example_configurations/rf_blackbox_predict.ini -r output/RandomForest.pickle -o output_predict -m 
+python predict.py -c example_configurations/rf_whitebox_predict.ini -r output/RandomForest.pickle -o output_predict -m 
+
+
+Linear Regression
+python run.py -c example_configurations/lr_blackbox.ini -o output -l -g
+python run.py -c example_configurations/lr_whitebox.ini -o output -l -g
+python predict.py -c example_configurations/lr_blackbox_predict.ini -r output/LRRidge.pickle -o output_predict -m
+python predict.py -c example_configurations/lr_whitebox_predict.ini -r output/LRRidge.pickle -o output_predict -m
+
+
+Neural Network
+python run.py -c example_configurations/nn_blackbox.ini -o output -l -g
+python run.py -c example_configurations/nn_whitebox.ini -o output -l -g
+python predict.py -c example_configurations/nn_blackbox_predict.ini -r output/LRRidge.pickle -o output_predict -m
+python predict.py -c example_configurations/nn_whitebox_predict.ini -r output/LRRidge.pickle -o output_predict -m
